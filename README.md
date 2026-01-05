@@ -1,7 +1,7 @@
 # Hey, I'm Luigi (0xBahalaNa), it's nice to meet you! 🤝
 
 ## 🧠 About Me
-- I'm a technologist focused on **buildingscalable solutions**.
+- I'm a technologist focused on **building scalable solutions**.
 - I build practical security tools that help teams go **from manual processes → engineering workflows**.
 - I believe auditing, governance, risk, and compliance should **scale with code, not checkboxes**.
 
