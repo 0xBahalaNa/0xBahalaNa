@@ -24,23 +24,16 @@
 
 ### ☁️ Cloud
 
-| Project | Description | Cloud Services |
-|-------|-------------|----------------|
-| **[IaC in AWS](https://github.com/0xBahalaNa/iac-in-aws)** | Infrastructure-as-Code labs exploring secure AWS architecture, governance patterns, and foundational cloud security concepts. | AWS CloudFormation, Identity Access Management (IAM), Organizations |
-| **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)** | SOC-style Azure project focused on cloud security monitoring, detection, and incident response fundamentals. | Azure Kusto Query Language (KQL), Log Analytics (Monitor), Sentinel |
-
----
+- **[IaC in AWS](https://github.com/0xBahalaNa/iac-in-aws)**
+- **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)**
 
 ### 🐍 Python
 
-| Project | Description | Cloud Services |
-|-------|-------------|----------------|
-| **[policy_checker](https://github.com/0xBahalaNa/policy_checker)** | Policy-as-code tool for evaluating cloud configurations against security and compliance rules. | AWS IAM, AWS Organizations |
-| **[secret_scanner](https://github.com/0xBahalaNa/secret_scanner)** | Python-based scanner to detect exposed secrets and sensitive data in source code and repositories. | Cloud-agnostic |
-| **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)** | API-driven service for collecting, structuring, and storing audit evidence as code. |Cloud-agnostic |
-| **[s3_audit](https://github.com/0xBahalaNa/s3_audit)** | Automated auditing tool to identify insecure S3 bucket configurations and access risks at scale. | AWS S3, AWS IAM |
-| **[iam_audit](https://github.com/0xBahalaNa/iam_audit)** | IAM-focused assessment tool analyzing roles, permissions, and least-privilege gaps. | AWS IAM |
-
+- **[policy_checker](https://github.com/0xBahalaNa/policy_checker)**
+- **[secret_scanner](https://github.com/0xBahalaNa/secret_scanner)**
+- **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)**
+- **[s3_audit](https://github.com/0xBahalaNa/s3_audit)**
+- **[iam_audit](https://github.com/0xBahalaNa/iam_audit)**
 
 ## 📫 Where to Find Me
 
