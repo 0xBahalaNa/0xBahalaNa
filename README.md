@@ -34,6 +34,7 @@
 - **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)**
 - **[s3_audit](https://github.com/0xBahalaNa/s3_audit)**
 - **[iam_audit](https://github.com/0xBahalaNa/iam_audit)**
+- **[sg_audit](https://github.com/0xBahalaNa/sg_audit)**
 
 ## 📫 Where to Find Me
 
