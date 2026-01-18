@@ -35,6 +35,7 @@
 - **[s3_audit](https://github.com/0xBahalaNa/s3_audit)**
 - **[iam_audit](https://github.com/0xBahalaNa/iam_audit)**
 - **[sg_audit](https://github.com/0xBahalaNa/sg_audit)**
+- **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)**
 
 ## 📫 Where to Find Me
 
