@@ -6,10 +6,9 @@
 - I believe auditing, governance, risk, and compliance should **scale with code, not checkboxes**.
 
 ## 🚀 What I'm Working On
-- **GRC Engineering** - building automation tools for audit and GRC workflows. 
-- **Identity Engineering (IAM/IGA)** - automations for IAM and IGA workflows.
-- **Cloud Security** -  building and researching cloud security practices and tools.
-- **Risk Assessments** - evaluating and prioritizing security risks in engineering workflows.
+- **GRC Engineering** - automating audit evidence collection and compliance workflows
+- **Identity Engineering (IAM/IGA)** - streamlining access reviews and provisioning pipelines
+- **Cloud Security** - researching and building AWS/Azure security tooling
 
 ## 🧰 Technical Stack
 
@@ -36,6 +35,7 @@
 - **[iam_audit](https://github.com/0xBahalaNa/iam_audit)**
 - **[sg_audit](https://github.com/0xBahalaNa/sg_audit)**
 - **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)**
+- **[compliance_report](https://github.com/0xBahalaNa/compliance_report)**
 
 ## 📫 Where to Find Me
 
