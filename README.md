@@ -23,7 +23,7 @@
 
 ### ☁️ Cloud
 
-- **[IaC in AWS](https://github.com/0xBahalaNa/iac-in-aws)**
+- **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code)**
 - **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)**
 
 ### 🐍 Python
@@ -37,6 +37,7 @@
 - **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)**
 - **[compliance_report](https://github.com/0xBahalaNa/compliance_report)**
 - **[convert_h1_to_h2](https://github.com/0xBahalaNa/convert_h1_to_h2)**
+
 ## 📫 Where to Find Me
 
 | Platform | Description |
