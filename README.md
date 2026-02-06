@@ -24,7 +24,7 @@ I build tools that automate audit evidence collection and compliance workflows i
 | **Programming & Scripting** | Python, AWS CLI, Bash, PowerShell |
 | **Infrastructure as Code** | AWS CloudFormation, Terraform (learning) |
 | **IAM & IGA** | Access Reviews, Privileged Access Monitoring, RBAC, Least Privilege, SSO |
-| **Compliance & Frameworks** | FedRAMP (High), NIST 800-53, NIST 800-171, NIST CSF, CJIS Security Policy |
+| **Compliance & Frameworks** | CJIS Security Policy, FedRAMP (High), and NIST 800-53 |
 
 ## Featured Projects
 
