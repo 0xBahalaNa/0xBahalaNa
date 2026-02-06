@@ -1,49 +1,57 @@
-# Hey, I'm Luigi (0xBahalaNa), it's nice to meet you! 🤝
+# Hey, I'm Luigi (0xBahalaNa) 🤝
 
-## 🧠 About Me
-- I'm a technologist focused on **building scalable solutions**.
-- I build practical security tools that help teams go **from manual processes → engineering workflows**.
-- I believe auditing, governance, risk, and compliance should **scale with code, not checkboxes**.
+## About Me
 
-## 🚀 What I'm Working On
-- **GRC Engineering** - automating audit evidence collection and compliance workflows
-- **Identity Engineering (IAM/IGA)** - streamlining access reviews and provisioning pipelines
-- **Cloud Security** - researching and building AWS/Azure security tooling
+I work at the intersection of **compliance engineering and public safety technology**. My background spans Identity Governance and Administration (privileged access monitoring, user access reviews, RBAC analysis) in regulated financial environments and hands-on technical support in a **FedRAMP High** environment serving federal and state/local law enforcement agencies.
 
-## 🧰 Technical Stack
+I build tools that automate audit evidence collection and compliance workflows in AWS - replacing manual checkbox processes with repeatable, scriptable, auditor-ready outputs.
+
+**Frameworks I work with:** CJIS Security Policy · FedRAMP (High baseline) · NIST 800-53
+
+**Certifications:** SSCP · CySA+ · PenTest+ · Security+ · Network+ · A+ · Project+ · ITIL 4 Foundations · Linux LPI Essentials
+
+## What I'm Working On
+
+- **GRC Engineering** - automating audit evidence collection and compliance workflows, mapping tools to CJIS Security Policy, FedRAMP, and NIST 800-53 controls
+- **Identity Engineering (IAM/IGA)** - streamlining access reviews and provisioning pipelines, applying AC-family control requirements to real infrastructure
+- **Cloud Security** - building and researching AWS security tooling aligned to compliance baselines
+
+## Technical Stack
 
 | Category | Technologies |
-|--------|-------------|
+| --- | --- |
 | **Cloud Platforms** | AWS, Azure |
-| **Programming and Scripting** | AWS CLI, Bash, Python, PowerShell |
+| **Programming & Scripting** | Python, AWS CLI, Bash, PowerShell |
 | **Infrastructure as Code** | AWS CloudFormation, Terraform (learning) |
-| **Identity and Access Management** | Access Reviews, IAM, IGA, Least Privilege, RBAC, Single Sign-On |
+| **IAM & IGA** | Access Reviews, Privileged Access Monitoring, RBAC, Least Privilege, SSO |
+| **Compliance & Frameworks** | FedRAMP (High), NIST 800-53, NIST 800-171, NIST CSF, CJIS Security Policy |
 
-## ⭐ Featured Projects
+## Featured Projects
 
 ### ☁️ Cloud
 
-- **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code)**
-- **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)**
+- **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code)** - CloudFormation templates and Service Control Policies for AWS resource deployment
+- **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)** - Security Operations Center implementation in Azure
 
-### 🐍 Python
+### 🐍 Python - AWS Audit & Compliance Tools
 
-- **[policy_checker](https://github.com/0xBahalaNa/policy_checker)**
-- **[secret_scanner](https://github.com/0xBahalaNa/secret_scanner)**
-- **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)**
-- **[s3_audit](https://github.com/0xBahalaNa/s3_audit)**
-- **[iam_audit](https://github.com/0xBahalaNa/iam_audit)**
-- **[sg_audit](https://github.com/0xBahalaNa/sg_audit)**
-- **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)**
-- **[compliance_report](https://github.com/0xBahalaNa/compliance_report)**
-- **[convert_h1_to_h2](https://github.com/0xBahalaNa/convert_h1_to_h2)**
+- **[iam_audit](https://github.com/0xBahalaNa/iam_audit)** - audits AWS IAM users for MFA compliance
+- **[s3_audit](https://github.com/0xBahalaNa/s3_audit)** - audits S3 buckets for security compliance
+- **[sg_audit](https://github.com/0xBahalaNa/sg_audit)** - audits security groups for overly permissive rules
+- **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)** - audits CloudTrail configuration for logging compliance
+- **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)** - generates timestamped audit evidence files from compliance checks
+- **[compliance_report](https://github.com/0xBahalaNa/compliance_report)** - aggregates compliance data into structured reports
+- **[policy_checker](https://github.com/0xBahalaNa/policy_checker)** - checks AWS policies for overly permissive configurations
+- **[secret_scanner](https://github.com/0xBahalaNa/secret_scanner)** - scans files for exposed credentials and secrets
 
-## 📫 Where to Find Me
+> 🔄 **In progress:** Each tool is being updated with control mappings to NIST 800-53, FedRAMP High, and CJIS Security Policy requirements. Track progress through open issues and PRs.
 
-| Platform | Description |
-|--------|-------------|
-| 🏅 [Credly](https://www.credly.com/users/luigi-carpio/badges#credly) | Digital badges and certifications showcasing my learning and professional development. |
-| 💻 [HackTheBox](https://app.hackthebox.com/public/users/1843403) | My HackTheBox profile where my platform progress is documented. |
-| 📝 [Medium](https://medium.com/@0xBahalaNa) | Long-form writing mostly on my HackTheBox walkthroughs/write-ups. I plan to write more about GRC Engineering, Identity Engineering, cloud security, and other Information Security related things. |
-| 💼 [LinkedIn](https://www.linkedin.com/in/luigi-carpio) | Professional profile documenting my transition into GRC and Identity Engineering. |
-| 🌐 Portfolio Website | Personal site to showcase lab and projects write-ups. 🛠 **UNDER CONSTRUCTION** 🛠 |
+## Currently Learning
+
+- Terraform for multi-environment IaC deployments
+- Open Policy Agent (OPA) and Rego for policy-as-code enforcement across cloud environments
+- Automating CJIS Security Policy control assessments in AWS
+
+## Where to Find Me
+
+[LinkedIn](https://www.linkedin.com/in/luigi-carpio) ·  [Medium](https://medium.com/@0xBahalaNa) · [HackTheBox](https://app.hackthebox.com/public/users/1843403) 
