@@ -31,7 +31,6 @@ I build tools that automate audit evidence collection and compliance workflows i
 ### ☁️ Cloud
 
 - **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code)** - CloudFormation templates and Service Control Policies for AWS resource deployment
-- **[Azure Cloud SOC](https://github.com/0xBahalaNa/Azure-Cloud-SOC)** - Security Operations Center implementation in Azure
 
 ### 🐍 Python - AWS Audit & Compliance Tools
 
