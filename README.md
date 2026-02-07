@@ -50,7 +50,7 @@ I build tools that automate audit evidence collection and compliance workflows i
 
 - Terraform for multi-environment IaC deployments
 - Open Policy Agent (OPA) and Rego for policy-as-code enforcement across cloud environments
-- Automating CJIS Security Policy control assessments in AWS
+- Automating CJIS Security Policy, FedRAMP, and NIST 800-53 control assessments in AWS
 
 ## Where to Find Me
 
