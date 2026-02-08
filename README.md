@@ -31,6 +31,7 @@ I build tools that automate audit evidence collection and compliance workflows i
 ### ☁️ Cloud
 
 - **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code)** - CloudFormation templates and Service Control Policies for AWS resource deployment
+- **[AWS Config Compliance Monitor](https://github.com/0xBahalaNa/aws-config-compliance-monitor)** - event driven compliance monitoring and auto-remediation for CJIS and FedRAMP High environments using AWS Config, Lambda, and SSM
 
 ### 🐍 Python - AWS Audit & Compliance Tools
 
