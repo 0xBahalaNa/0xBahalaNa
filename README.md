@@ -35,14 +35,14 @@ I build tools that automate audit evidence collection and compliance workflows i
 
 ### 🐍 Python - AWS Audit & Compliance Tools
 
-- **[iam_audit](https://github.com/0xBahalaNa/iam_audit)** - audits AWS IAM users for MFA compliance
-- **[s3_audit](https://github.com/0xBahalaNa/s3_audit)** - audits S3 buckets for security compliance
-- **[sg_audit](https://github.com/0xBahalaNa/sg_audit)** - audits security groups for overly permissive rules
-- **[cloudtrail_audit](https://github.com/0xBahalaNa/cloudtrail_audit)** - audits CloudTrail configuration for logging compliance
-- **[evidence_logger](https://github.com/0xBahalaNa/evidence_logger)** - generates timestamped audit evidence files from compliance checks
-- **[compliance_report](https://github.com/0xBahalaNa/compliance_report)** - aggregates compliance data into structured reports
-- **[policy_checker](https://github.com/0xBahalaNa/policy_checker)** - checks AWS policies for overly permissive configurations
-- **[secret_scanner](https://github.com/0xBahalaNa/secret_scanner)** - scans files for exposed credentials and secrets
+- **[IAM Audit](https://github.com/0xBahalaNa/iam-audit)** - audits AWS IAM users for MFA compliance
+- **[S3 Audit](https://github.com/0xBahalaNa/s3-audit)** - audits S3 buckets for security compliance
+- **[Security Group Audit](https://github.com/0xBahalaNa/sg-audit)** - audits security groups for overly permissive rules
+- **[CloudTrail Audit](https://github.com/0xBahalaNa/cloudtrail-audit)** - audits CloudTrail configuration for logging compliance
+- **[Evidence Logger](https://github.com/0xBahalaNa/evidence-logger)** - generates timestamped audit evidence files from compliance checks
+- **[Compliance Report](https://github.com/0xBahalaNa/compliance-report)** - aggregates compliance data into structured reports
+- **[Policy Checker](https://github.com/0xBahalaNa/policy-checker)** - checks AWS policies for overly permissive configurations
+- **[Secret Scanner](https://github.com/0xBahalaNa/secret-scanner)** - scans files for exposed credentials and secrets
 
 > 🔄 **In progress:** Each tool is being updated with control mappings to NIST 800-53, FedRAMP High, and CJIS Security Policy requirements. Track progress through open issues and PRs.
 
