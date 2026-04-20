@@ -70,4 +70,4 @@ Audit tools detect -> Config monitor watches -> Remediation fixes
 
 ## Where to Find Me
 
-[LinkedIn](https://www.linkedin.com/in/luigi-carpio) | [Medium](https://medium.com/@0xBahalaNa) | [HackTheBox](https://app.hackthebox.com/public/users/1843403)
+[Portfolio](https://luigicarpio.dev) | [LinkedIn](https://www.linkedin.com/in/luigi-carpio) | [Medium](https://medium.com/@0xBahalaNa) | [HackTheBox](https://app.hackthebox.com/public/users/1843403)
