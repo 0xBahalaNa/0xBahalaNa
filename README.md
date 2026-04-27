@@ -40,6 +40,11 @@ Audit tools detect -> Config monitor watches -> Remediation fixes
 
 ## Featured Projects
 
+### Frameworks & Gap Analysis
+
+- **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** Maps NIST 800-53 Rev 5 controls to AWS services, stored as an OSCAL Component Definition. Generator renders markdown with FedRAMP High baseline filtering and a CJIS v6.0 delta section identifying where CJIS exceeds FedRAMP.
+- **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-gap-analysis):** Compares CJIS Security Policy v6.0 and FedRAMP High baselines (both aligned to NIST 800-53 Rev 5). Identifies 13 implementation-level deltas and 15 control-level gaps (CJIS-only controls), encoded as an OSCAL overlay.
+
 ### Infrastructure & Continuous Monitoring
 
 - **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code):** CloudFormation templates and Service Control Policies enforcing security baselines
