@@ -10,7 +10,7 @@ I build tools that automate audit evidence collection, continuous monitoring, an
 
 **Frameworks:** CJIS Security Policy v6.0 | FedRAMP High | NIST 800-53 Rev 5 | NIST CSF 2.0
 
-**Certifications:** SSCP | CySA+ | PenTest+ | Security+ | Network+ | A+ | Project+ | ITIL 4 Foundations | Linux LPI Essentials
+**Certifications:** SSCP | CySA+ | PenTest+ | Security+
 
 ## What I'm Building
 
@@ -19,6 +19,7 @@ These repos form a **compliance lifecycle**: each tool handles a stage of the co
 ```
 Audit tools detect -> Config monitor watches -> Remediation fixes
     -> Evidence logger collects -> Compliance report visualizes
+    -> OSCAL pipeline produces machine-readable SAR evidence
 ```
 
 - **GRC Engineering:** automating audit evidence collection and compliance-as-code workflows, mapping tools to CJIS Security Policy, FedRAMP, and NIST 800-53 controls
@@ -35,43 +36,49 @@ Audit tools detect -> Config monitor watches -> Remediation fixes
 | **Policy-as-Code** | OPA/Rego, Checkov, Conftest |
 | **CI/CD** | GitHub Actions |
 | **IAM & IGA** | Access Reviews, Privileged Access Monitoring, RBAC, Least Privilege, SSO |
-| **Compliance** | CJIS Security Policy v6.0, FedRAMP High, NIST 800-53 Rev 5, NIST CSF 2.0, OSCAL |
+| **Compliance Frameworks** | CJIS Security Policy v6.0, FedRAMP High, NIST 800-53 Rev 5, NIST CSF 2.0 |
+| **Machine-Readable Compliance** | OSCAL (Assessment Results SAR, Component Definitions), IBM Compliance Trestle, oscal-pydantic |
 | **Observability** | Kibana/OpenSearch, Splunk, Sentry, SIEM dashboards (KQL) |
 
 ## Featured Projects
 
+### Active Flagships
+
+- **[OSCAL Evidence Pipeline](https://github.com/0xBahalaNa/oscal-evidence-pipeline):** Transforms compliance findings from existing audit tools into OSCAL Assessment Results (SAR) JSON — the machine-readable evidence format required by FedRAMP 20x and expected by federal assessors. Built on IBM Compliance Trestle and oscal-pydantic. v1.0 in flight.
+- **[AWS GRC Terraform Modules](https://github.com/0xBahalaNa/aws-grc-terraform-modules):** Reusable Terraform modules for FedRAMP High and CJIS v6.0 baselines on AWS, with OPA/Rego policy tests and tfsec/checkov CI gates. Each module ships with a `compliance_attestation` output that downstream OSCAL evidence pipelines cite as proof. Companion to the AWS Fundamentals Labs Curriculum on [luigicarpio.dev/blog](https://luigicarpio.dev/blog).
+
 ### Frameworks & Gap Analysis
 
 - **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** Maps NIST 800-53 Rev 5 controls to AWS services, stored as an OSCAL Component Definition. Generator renders markdown with FedRAMP High baseline filtering and a CJIS v6.0 delta section identifying where CJIS exceeds FedRAMP.
-- **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-gap-analysis):** Compares CJIS Security Policy v6.0 and FedRAMP High baselines (both aligned to NIST 800-53 Rev 5). Identifies 13 implementation-level deltas and 15 control-level gaps (CJIS-only controls), encoded as an OSCAL overlay.
+- **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-high-gap-analysis):** Compares CJIS Security Policy v6.0 and FedRAMP High baselines (both aligned to NIST 800-53 Rev 5). Identifies 13 implementation-level deltas and 15 control-level gaps (CJIS-only controls), encoded as an OSCAL overlay.
 
 ### Infrastructure & Continuous Monitoring
 
-- **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code):** CloudFormation templates and Service Control Policies enforcing security baselines
-- **[AWS Config Compliance Monitor](https://github.com/0xBahalaNa/aws-config-compliance-monitor):** Event-driven compliance monitoring and auto-remediation for CJIS and FedRAMP High environments using AWS Config, Lambda, and SSM
+- **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code):** CloudFormation templates and Service Control Policies enforcing security baselines across CJIS, FedRAMP High, and NIST 800-53. Five-layer baseline (CloudTrail + S3 Object Lock + VPC Flow Logs, IAM, KMS CMK, AWS Config, GuardDuty + Security Hub) plus org-level SCPs.
+- **[AWS Config Compliance Monitor](https://github.com/0xBahalaNa/aws-config-compliance-monitor):** Event-driven compliance monitoring and auto-remediation for CJIS and FedRAMP High environments using AWS Config, Lambda, and SSM.
 
 ### Audit & Evidence Collection Tools
 
-- **[IAM Audit](https://github.com/0xBahalaNa/iam-audit):** Audits AWS IAM users for MFA compliance and credential hygiene
-- **[S3 Audit](https://github.com/0xBahalaNa/s3-audit):** Audits S3 buckets for encryption, public access, and versioning
-- **[Security Group Audit](https://github.com/0xBahalaNa/sg-audit):** Audits security groups for overly permissive inbound rules
-- **[CloudTrail Audit](https://github.com/0xBahalaNa/cloudtrail-audit):** Audits CloudTrail configuration for logging compliance
-- **[Evidence Logger](https://github.com/0xBahalaNa/evidence-logger):** Generates timestamped, auditor-ready evidence files from compliance checks
-- **[Compliance Report](https://github.com/0xBahalaNa/compliance-report):** Aggregates compliance data into structured reports with pass/fail summaries
+- **[IAM Audit](https://github.com/0xBahalaNa/iam-audit):** Audits AWS IAM users for MFA compliance, access key rotation, and credential hygiene.
+- **[S3 Audit](https://github.com/0xBahalaNa/s3-audit):** Audits S3 buckets for encryption, public access, and versioning.
+- **[Security Group Audit](https://github.com/0xBahalaNa/sg-audit):** Audits security groups for overly permissive inbound rules.
+- **[CloudTrail Audit](https://github.com/0xBahalaNa/cloudtrail-audit):** Audits CloudTrail logs for root account usage, failed API calls, and sensitive IAM / SG / Trail / S3 changes.
+- **[Evidence Logger](https://github.com/0xBahalaNa/evidence-logger):** Generates timestamped, auditor-ready evidence files from compliance checks.
+- **[Compliance Report](https://github.com/0xBahalaNa/compliance-report):** Aggregates compliance data into structured reports with pass/fail summaries.
 
 ### Security & Policy-as-Code
 
 - **[Policy Checker](https://github.com/0xBahalaNa/policy-checker):** Scans AWS IAM policies for overly permissive configurations and CJIS v6.0 violations. 27 unit tests, GitHub Actions CI/CD.
-- **[Secret Scanner](https://github.com/0xBahalaNa/secret-scanner):** Scans files and repos for exposed credentials and secrets with CI/CD gating via non-zero exit codes
+- **[Secret Scanner](https://github.com/0xBahalaNa/secret-scanner):** Scans files and repos for exposed credentials, secrets, and CJI identifiers (ORI, NCIC, FBI numbers, State IDs) with CI/CD gating via non-zero exit codes. Used as the first adapter in [OSCAL Evidence Pipeline](https://github.com/0xBahalaNa/oscal-evidence-pipeline).
 
 > Each tool includes control mappings to NIST 800-53 Rev 5, FedRAMP High, and CJIS Security Policy v6.0 requirements.
 
 ## Currently Learning
 
-- OSCAL and IBM Compliance Trestle for machine-readable compliance artifacts (FedRAMP 20x alignment)
-- Terraform for multi-environment IaC deployments
-- Open Policy Agent (OPA) and Rego for policy-as-code enforcement
-- CJIS Security Policy v6.0 deltas from FedRAMP High (FIPS 140-2/3, agency-managed keys, CJI-specific access controls)
+- **CGE-P (Certified GRC Engineer – Practitioner)** exam prep — targeting August 2026 window
+- **Terraform module patterns** for FedRAMP High and CJIS v6.0 baselines (per-module OPA/Rego policy bundles, compliance attestation outputs, plan-time validation)
+- **OPA / Rego** policy-as-code testing patterns (conftest, plan-time policy gates)
+- **CJIS Security Policy v6.0 deltas** from FedRAMP High (FIPS 140-2/3, agency-managed keys, CJI-specific access controls)
 
 ## Where to Find Me
 
