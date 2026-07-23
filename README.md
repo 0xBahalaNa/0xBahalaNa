@@ -18,11 +18,14 @@ I build tools that automate audit evidence collection, continuous monitoring, an
 
 These repos form a **compliance lifecycle**: each tool handles a stage of the continuous monitoring and audit evidence pipeline.
 
-```
-Audit tools detect -> Config monitor watches -> Remediation fixes
-    -> Evidence logger collects -> Compliance report visualizes
-    -> Evidence warehouse proves the population is complete (dbt tests + lineage)
-    -> OSCAL pipeline produces machine-readable SAR evidence
+```mermaid
+graph LR
+    A[Audit tools<br/>detect findings] --> B[Config monitor<br/>watches drift]
+    B --> C[Remediation<br/>fixes violations]
+    A --> D[Evidence logger<br/>collects records]
+    D --> E[Compliance report<br/>visualizes]
+    D --> F[Evidence warehouse<br/>dbt completeness]
+    D --> G[OSCAL pipeline<br/>machine-readable SAR]
 ```
 
 - **GRC Engineering:** automating audit evidence collection and compliance-as-code workflows, mapping tools to CJIS Security Policy, FedRAMP, and NIST 800-53 controls
@@ -57,6 +60,7 @@ Audit tools detect -> Config monitor watches -> Remediation fixes
 
 - **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** Maps NIST 800-53 Rev 5 controls to AWS services, stored as an OSCAL Component Definition. Generator renders markdown with FedRAMP High baseline filtering and a CJIS v6.0 delta section identifying where CJIS exceeds FedRAMP.
 - **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-high-gap-analysis):** Compares CJIS Security Policy v6.0 and FedRAMP High baselines (both aligned to NIST 800-53 Rev 5). Identifies 13 implementation-level deltas and 15 control-level gaps (CJIS-only controls), encoded as an OSCAL overlay.
+- **[SOC 2 / ISO 27001 / NIST Crosswalk](https://github.com/0xBahalaNa/soc2-iso27001-nist-crosswalk):** Pivots on SOC 2 Common Criteria, mapping NIST 800-53 Rev 5 and ISO 27001:2022 Annex A onto each criterion with a Strong/Partial/Contextual confidence label and rationale. mappings.yaml is the single source of truth; build_crosswalk.py --check gates drift between the YAML and the generated Markdown, JSON, and CSV artifacts.
 
 ### Infrastructure & Continuous Monitoring
 
