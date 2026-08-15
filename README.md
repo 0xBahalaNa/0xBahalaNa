@@ -46,7 +46,7 @@ graph LR
 
 Six leads. Three federal, three commercial. The commercial three are one arc: own the corpus, answer as the vendor, assess as the customer.
 
-- **[Evidence Warehouse](https://github.com/0xBahalaNa/evidence-warehouse):** The layer after the audit scripts. Raw findings land in DuckDB. dbt stages them into a queryable model and tests that the population is complete. Fail loud. Lineage from API call to finding. v1.0 in progress.
+- **[Evidence Warehouse](https://github.com/0xBahalaNa/evidence-warehouse):** The layer after the audit scripts. Raw findings land in DuckDB. dbt stages them into a queryable model and tests that the population is complete. Fail loud. Lineage from API call to finding. v1.0 shipped 2026-08-12.
 - **[OSCAL Evidence Pipeline](https://github.com/0xBahalaNa/oscal-evidence-pipeline):** I take audit tool output and turn it into OSCAL Assessment Results JSON. IBM Compliance Trestle handles the model work. Target shape: FedRAMP 20x machine-readable evidence.
 - **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code):** SCPs deny the non-compliant action at the org. CloudFormation lays down a baseline that is compliant by default: CloudTrail, IAM, KMS, Config, GuardDuty, Security Hub. Preventive guardrails at the org level, detective layers in the account.
 - **[SOC 2 / ISO 27001 / NIST Crosswalk](https://github.com/0xBahalaNa/soc2-iso27001-nist-crosswalk):** One `mappings.yaml`. SOC 2 Common Criteria as the pivot, with NIST 800-53 Rev 5 and ISO 27001:2022 Annex A hung off each criterion and a Strong/Partial/Contextual label. `build_crosswalk.py` emits Markdown, JSON, and CSV. `--check` fails on drift.
