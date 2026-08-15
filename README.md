@@ -4,11 +4,11 @@
 
 I was a sworn officer for years, using public safety technology in the field. Then I did Identity Governance at a financial services company: privileged access monitoring, user access reviews, RBAC analysis. Now I do product support at a FedRAMP High public safety software company, and I build the compliance tooling for systems like the ones I used in the field.
 
-I write open-source Python and AWS tools for evidence collection, continuous monitoring, policy-as-code, and compliance-as-code. Mapped to SOC 2, ISO 27001:2022, NIST 800-53 Rev 5, FedRAMP High, and CJIS v6.0. I build with AI agent workflows and MCP integrations: one model writes the code, a separate model audits the diff before anything gets committed.
+I write open-source Python and AWS tools for evidence collection, continuous monitoring, policy-as-code, and compliance-as-code. Mapped to SOC 2, ISO 27001:2022, NIST 800-53 Rev 5, FedRAMP High, and CJIS v6.1. I build with AI agent workflows and MCP integrations: one model writes the code, a separate model audits the diff before anything gets committed.
 
 **Open to:** GRC Engineer | Security Compliance Engineer | Identity Governance Engineer | Compliance Data Engineer
 
-**Frameworks:** SOC 2 | ISO 27001:2022 | NIST 800-53 Rev 5 | FedRAMP High | CJIS Security Policy v6.0 | NIST CSF 2.0
+**Frameworks:** SOC 2 | ISO 27001:2022 | NIST 800-53 Rev 5 | FedRAMP High | CJIS Security Policy v6.1 | NIST CSF 2.0
 
 **Certifications:** SSCP | CySA+ | PenTest+ | Security+
 
@@ -55,13 +55,13 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 
 ### Frameworks & Gap Analysis
 
-- **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** 31 controls mapped to AWS services as an OSCAL Component Definition. Generator filters to FedRAMP High and calls out where CJIS v6.0 pushes past that baseline.
-- **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-high-gap-analysis):** FedRAMP High is not CJIS. Encoded where v6.0 is stricter and where CJIS-only controls have no FedRAMP High home. Output is an OSCAL overlay.
+- **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** 31 controls mapped to AWS services as an OSCAL Component Definition. Generator filters to FedRAMP High and calls out where CJIS v6.1 pushes past that baseline.
+- **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-high-gap-analysis):** FedRAMP High is not CJIS. Encoded where v6.x is stricter and where CJIS-only controls have no FedRAMP High home. Output is an OSCAL overlay.
 
 ### Infrastructure & Continuous Monitoring
 
 - **[AWS Config Compliance Monitor](https://github.com/0xBahalaNa/aws-config-compliance-monitor):** Config rules fire. Lambda remediates. SSM runs the playbook. Continuous monitoring (CA-7), with FedRAMP 20x KSI tracking in mind.
-- **[AWS GRC Terraform Modules](https://github.com/0xBahalaNa/aws-grc-terraform-modules):** Reusable Terraform modules for FedRAMP High and CJIS v6.0 baselines, with OPA/Rego tests and tfsec/checkov CI gates. Companion to the AWS Fundamentals Labs on [luigicarpio.dev/blog](https://luigicarpio.dev/blog).
+- **[AWS GRC Terraform Modules](https://github.com/0xBahalaNa/aws-grc-terraform-modules):** Reusable Terraform modules for FedRAMP High and CJIS v6.1 baselines, with OPA/Rego tests and tfsec/checkov CI gates. Companion to the AWS Fundamentals Labs on [luigicarpio.dev/blog](https://luigicarpio.dev/blog).
 
 ### Audit & Evidence Collection Tools
 
@@ -75,7 +75,7 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 
 ### Security & Policy-as-Code
 
-- **[Policy Checker](https://github.com/0xBahalaNa/policy-checker):** IAM policy scan for overly permissive configs and CJIS v6.0 violations.
+- **[Policy Checker](https://github.com/0xBahalaNa/policy-checker):** IAM policy scan for overly permissive configs and CJIS v6.1 violations.
 - **[Secret Scanner](https://github.com/0xBahalaNa/secret-scanner):** Usual secrets plus CJI identifiers (ORI, NCIC, FBI numbers, State IDs). Non-zero exit for CI. First adapter into the OSCAL pipeline.
 
 ## Currently Learning
