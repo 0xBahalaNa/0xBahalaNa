@@ -10,7 +10,7 @@ I write open-source Python and AWS tools for evidence collection, continuous mon
 
 **Frameworks:** SOC 2 | ISO 27001:2022 | NIST 800-53 Rev 5 | FedRAMP High | CJIS Security Policy v6.1 | NIST CSF 2.0
 
-**Certifications:** SSCP | CySA+ | PenTest+ | Security+
+**Certifications:** CGE-P | SSCP | CySA+ | PenTest+ | Security+
 
 ## What I'm Building
 
@@ -49,7 +49,7 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 - **[Evidence Warehouse](https://github.com/0xBahalaNa/evidence-warehouse):** The layer after the audit scripts. Raw findings land in DuckDB. dbt stages them into a queryable model and tests that the population is complete. Fail loud. Lineage from API call to finding. v1.0 shipped 2026-08-12.
 - **[OSCAL Evidence Pipeline](https://github.com/0xBahalaNa/oscal-evidence-pipeline):** I take audit tool output and turn it into OSCAL Assessment Results JSON. IBM Compliance Trestle handles the model work. Target shape: FedRAMP 20x machine-readable evidence.
 - **[AWS Compliance as Code](https://github.com/0xBahalaNa/aws-compliance-as-code):** SCPs deny the non-compliant action at the org. CloudFormation lays down a baseline that is compliant by default: CloudTrail, IAM, KMS, Config, GuardDuty, Security Hub. Preventive guardrails at the org level, detective layers in the account.
-- **[SOC 2 / ISO 27001 / NIST Crosswalk](https://github.com/0xBahalaNa/soc2-iso27001-nist-crosswalk):** One `mappings.yaml`. SOC 2 Common Criteria as the pivot, with NIST 800-53 Rev 5 and ISO 27001:2022 Annex A hung off each criterion and a Strong/Partial/Contextual label. `build_crosswalk.py` emits Markdown, JSON, and CSV. `--check` fails on drift.
+- **[SOC 2 / ISO 27001 / NIST Crosswalk](https://github.com/0xBahalaNa/soc2-iso-27001-nist-800-53-rev-5-crosswalk):** One `mappings.yaml`. SOC 2 Common Criteria as the pivot, with NIST 800-53 Rev 5 and ISO 27001:2022 Annex A hung off each criterion and a Strong/Partial/Contextual label. `build_crosswalk.py` emits Markdown, JSON, and CSV. `--check` fails on drift.
 - **[Security Questionnaire Responder](https://github.com/0xBahalaNa/security-questionnaire-responder):** Drafts grounded answers from that same corpus, with an inline citation and a confidence tier. When coverage is missing it returns `INSUFFICIENT_COVERAGE` instead of a plausible guess.
 - **[Vendor Security Due Diligence](https://github.com/0xBahalaNa/vendor-security-due-diligence):** `score_vendor.py` runs two axes against a CC9.2 / ISO A.5.19-A.5.23 checklist: the data-handling profile sets inherent risk, the weighted checklist sets assurance, and a matrix resolves the residual tier. Writes a memo for the decision and JSON you can diff at annual re-review.
 
@@ -57,6 +57,7 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 
 - **[NIST 800-53 Rev 5 to AWS Mapping](https://github.com/0xBahalaNa/nist-800-53-rev-5-to-aws-mapping):** 31 controls mapped to AWS services as an OSCAL Component Definition. Generator filters to FedRAMP High and calls out where CJIS v6.1 pushes past that baseline.
 - **[CJIS-FedRAMP Gap Analysis](https://github.com/0xBahalaNa/cjis-fedramp-high-gap-analysis):** FedRAMP High is not CJIS. Encoded where v6.x is stricter and where CJIS-only controls have no FedRAMP High home. Output is an OSCAL overlay.
+- **[CGE-P Capstone](https://github.com/0xBahalaNa/cge-p-capstone):** Graded CGE-P capstone, CMMC Level 2 mapped to NIST 800-171 Rev 3. I inherited an app with eight named gaps and wrapped it in four governance layers without touching the application: a Terraform baseline, an OPA suite that blocks regressions at the pull request, a pipeline that signs and vaults evidence on merge, and an OSCAL component definition an assessor can follow from control claim to signed artifact. Built to the exam spec and independently assessed.
 
 ### Infrastructure & Continuous Monitoring
 
