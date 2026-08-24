@@ -44,7 +44,7 @@ graph LR
 
 ### Flagships
 
-Six leads. Three federal, three commercial. The commercial three are one arc: own the corpus, answer as the vendor, assess as the customer.
+Seven leads. Three federal, three commercial, and one that sits across both. The commercial three are one arc: own the corpus, answer as the vendor, assess as the customer.
 
 - **[Evidence Warehouse](https://github.com/0xBahalaNa/evidence-warehouse):** The layer after the audit scripts. Raw findings land in DuckDB. dbt stages them into a queryable model and tests that the population is complete. Fail loud. Lineage from API call to finding. v1.0 shipped 2026-08-12.
 - **[OSCAL Evidence Pipeline](https://github.com/0xBahalaNa/oscal-evidence-pipeline):** I take audit tool output and turn it into OSCAL Assessment Results JSON. IBM Compliance Trestle handles the model work. Target shape: FedRAMP 20x machine-readable evidence.
@@ -52,6 +52,7 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 - **[SOC 2 / ISO 27001 / NIST Crosswalk](https://github.com/0xBahalaNa/soc2-iso-27001-nist-800-53-rev-5-crosswalk):** One `mappings.yaml`. SOC 2 Common Criteria as the pivot, with NIST 800-53 Rev 5 and ISO 27001:2022 Annex A hung off each criterion and a Strong/Partial/Contextual label. `build_crosswalk.py` emits Markdown, JSON, and CSV. `--check` fails on drift.
 - **[Security Questionnaire Responder](https://github.com/0xBahalaNa/security-questionnaire-responder):** Drafts grounded answers from that same corpus, with an inline citation and a confidence tier. When coverage is missing it returns `INSUFFICIENT_COVERAGE` instead of a plausible guess.
 - **[Vendor Security Due Diligence](https://github.com/0xBahalaNa/vendor-security-due-diligence):** `score_vendor.py` runs two axes against a CC9.2 / ISO A.5.19-A.5.23 checklist: the data-handling profile sets inherent risk, the weighted checklist sets assurance, and a matrix resolves the residual tier. Writes a memo for the decision and JSON you can diff at annual re-review.
+- **[IAM Access Review](https://github.com/0xBahalaNa/iam-access-review):** A user access review as a data pipeline. Six identity extracts land in SQLite, get reconciled against HR as the population of record, and run through SQL control checks: terminated-but-active, orphaned, dormant, ownerless groups, direct assignments. A recursive CTE flattens nested groups so privileged reach is the effective answer, not the direct-membership one. Emits an evidence packet with SHA-256 input hashes that regenerates byte-identical. Stdlib only. v1.0 shipped 2026-08-23.
 
 ### Frameworks & Gap Analysis
 
@@ -72,7 +73,6 @@ Six leads. Three federal, three commercial. The commercial three are one arc: ow
 - **[CloudTrail Audit](https://github.com/0xBahalaNa/cloudtrail-audit):** Root usage, failed API calls, sensitive IAM / SG / Trail / S3 changes.
 - **[Evidence Logger](https://github.com/0xBahalaNa/evidence-logger):** Timestamped evidence files from compliance checks.
 - **[Compliance Report](https://github.com/0xBahalaNa/compliance-report):** Pass/fail summaries from aggregated check data.
-- **[IAM Access Review](https://github.com/0xBahalaNa/iam-access-review):** UAR pipeline over multi-source identity data (design-stage; joins the lead set when v1.0 ships).
 
 ### Security & Policy-as-Code
 
